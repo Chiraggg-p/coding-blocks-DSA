@@ -60,28 +60,27 @@ public class array2 {
         }
         return false;
        } 
-       static boolean binarySearchAB(int[] arr , int n , int a, int b){
-        // int i =a; int j=arr.length-1;
-        // for(i=a;i<b;i++){
-        //     int mid = (i+j)/2;
-        //     if(mid==n) return true;
-        //     else if(mid<n) i=mid+1;
-        //     else j=mid-1; 
-
-        // }
+       static boolean binarySearchAB(int[] arr , int n, int a, int b ){
+        int j=b;
+        for(int i=a;i<=b;i++){
+            int mid = (i+j)/2;
+            if(mid==n) return true;
+            else if(mid<n) i=mid+1;
+            else j=mid-1; 
+        }  return false;
         // return false;
 
             //or another type
 
-    //     int i =a; int j=b;
-    //     while (i<=j) {
-    //         int mid = (i+j)/2;
-    //         if(mid==n) return true;
-    //         else if(mid<n) i=mid+1;
-    //         else j=mid-1;  
-    //     }
+    // int i =a; int j= b;
+    // while(i<=j){
+    //     int mid = (i+j)/2;
+    //     if(mid== n) return true;
+    //     else if(n<mid) j=mid-1;
+    //     else i=mid+1;
+    // }
     //     return false;
-    //    }
+}
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 5,6,7,8,9,10 };
@@ -89,6 +88,6 @@ public class array2 {
         // // System.out.println(sumArrAB(arr, 1, 3));
         // // printReverseArr(arr);
         // System.out.println(linearSearch(arr, 7));
-        System.out.println(binarySearchAB(arr, 9, 2, 7));
+        System.out.println(binarySearchAB(arr, 5, 3, 9));
     }
 }
