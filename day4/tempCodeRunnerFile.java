@@ -1,1 +1,0 @@
-printReverseArr(arr);

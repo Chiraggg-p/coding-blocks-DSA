@@ -88,6 +88,6 @@ public class array2 {
         // // System.out.println(sumArrAB(arr, 1, 3));
         // // printReverseArr(arr);
         // System.out.println(linearSearch(arr, 7));
-        System.out.println(binarySearchAB(arr, 6, 3, 9));
+        System.out.println(binarySearchAB(arr, 19, 3, 9));
     }
 }

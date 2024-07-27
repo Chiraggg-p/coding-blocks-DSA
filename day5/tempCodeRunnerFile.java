@@ -1,0 +1,1 @@
+System.out.println(countOccurence(arr, num));
