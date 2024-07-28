@@ -70,7 +70,7 @@ public class binarySearch {
     {
         int[] arr={1,2,2,2,3,3,4,5,5,6,7,7,7,7,8,9,10,10,10};
 
-        Scanner obj= new Scanner(System.in);
+        Scanner obj= new Scanner(System.in);   
         System.err.println("enter the number you wanna search for !!");
         int num = obj.nextInt();
         
