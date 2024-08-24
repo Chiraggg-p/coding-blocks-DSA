@@ -2,7 +2,10 @@ public class BsSearchSpace {
 
     static boolean check(int speed , int dist , int maxTime){
         int distance_travelled = speed*maxTime;
-        return(distance_travelled>=dist);
+        // if(distance_travelled>=dist) return true;
+        // else return false;
+        return distance_travelled>=dist;
+
     }
     static int bsSearchSp(int dis , int time ){
         int low =0,high =1000, mid=0,ans=0;
@@ -16,10 +19,11 @@ public class BsSearchSpace {
         }
         return ans;
     }
-    public static void main(String[] args) {
+         public static void main(String[] args) {
         int dis = 1000;
-        int time = 10;
+        int time = 100;
         System.out.println(bsSearchSp(dis, time));
     
+
   }
 }
