@@ -3,7 +3,7 @@ public class strBld {
         StringBuilder sb = new StringBuilder(10);
         sb.append("hola");
         sb.append("amigo");
-        sb.replace(0, 0, null)
+        sb.replace(2, 4, "replaced");
         
         // System.out.println(sb.substring(5 , 6));
         // System.out.println(sb.insert(4," "));
